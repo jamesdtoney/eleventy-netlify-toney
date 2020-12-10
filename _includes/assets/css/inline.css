@@ -54,10 +54,13 @@ code {
 a[href],
 a[href]:visited {
 	color: var(--primary);
+	text-decoration: none;
+	border-bottom: 5px solid var(--primary);
 }
 
 a[href]:not(:hover) {
 	text-decoration: none;
+	border-bottom: none;
 }
 
 img {
@@ -130,6 +133,10 @@ header nav li {
 header nav li a {
 	padding: .25em .5em;
 	color: white !important;
+}
+
+header nav li a[href]:hover {
+	border-bottom: 5px solid white;
 }
 
 header nav li a[href]:not(:hover) {
