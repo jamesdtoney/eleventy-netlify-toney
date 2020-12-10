@@ -23,7 +23,7 @@ body {
 }
 
 main, header, footer {
-	width: clamp(10rem, 50rem, 100%);
+	width: clamp(10rem, 70rem, 100%);
 	margin: 0 auto;
 }
 
@@ -105,7 +105,7 @@ header > em {
 	font-weight: bold;
 	font-style: normal;
 	background: white;
-	padding: 2em .5em .5em;
+	padding: .5em .5em .5em;
 	text-transform: uppercase;
 }
 
