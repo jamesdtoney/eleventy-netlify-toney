@@ -1,11 +1,11 @@
 ---
-layout: layouts/home.njk
+layout: layouts/page.njk
 title: Home
 date: 2020-12-10
 permalink: /
 hero: '/static/img/home.jpg'
 eleventyNavigation:
-  key: Home
+  key: Welcome
   order: 0
 ---
 Paragraphs are separated by a blank line.
