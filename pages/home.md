@@ -1,20 +1,39 @@
 ---
 layout: layouts/home.njk
 title: Home
-date: 2016-01-01T00:00:00.000Z
+date: 2020-12-10
 permalink: /
 eleventyNavigation:
   key: Home
   order: 0
 ---
-# Welcome
+Paragraphs are separated by a blank line.
 
-This is a template for building a simple blog website with the [Eleventy static site generator](https://www.11ty.io), with deployment to [Netlify](https://www.netlify.com).
+2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
+look like:
 
-Includes [Netlify CMS](https://www.netlifycms.org) for WYSIWYG content editing, and [Netlify Forms](https://www.netlify.com/docs/form-handling) for processing your site's form data.
+  * this one
+  * that one
+  * the other one
 
-For more info on installation and usage, view the [project repo]({{ pkg.repository.url }}) on GitHub.
+Note that --- not considering the asterisk --- the actual text
+content starts at 4-columns in.
 
-Or click the button below to deploy your own copy of this project to Netlify.
+> Block quotes are
+> written like so.
+>
+> They can span multiple paragraphs,
+> if you like.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate&stack=cms)
+Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
+in chapters 12--14"). Three dots ... will be converted to an ellipsis.
+Unicode is supported. ☺
+
+An h2 header
+------------
+
+Here's a numbered list:
+
+ 1. first item
+ 2. second item
+ 3. third item
