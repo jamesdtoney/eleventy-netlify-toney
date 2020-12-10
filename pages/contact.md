@@ -5,6 +5,7 @@ metaDescription: This is a sample meta description. If one is not present in you
 section: contact
 date: 2020-12-10
 permalink: /contact/index.html
+hero: '/static/img/home.jpg'
 eleventyNavigation:
   key: Contact
   order: 3

@@ -3,6 +3,7 @@ layout: layouts/home.njk
 title: Home
 date: 2020-12-10
 permalink: /
+hero: '/static/img/home.jpg'
 eleventyNavigation:
   key: Home
   order: 0

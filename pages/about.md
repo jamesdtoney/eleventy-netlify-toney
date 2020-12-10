@@ -3,12 +3,16 @@ title: About us
 metaDescription: This is a sample meta description. If one is not present in your page/post's front matter, the default metadata.desciption will be used instead.
 date: 2020-12-10
 permalink: /about/index.html
+hero: '/static/img/home.jpg'
 eleventyNavigation:
   key: About
   order: 1
 ---
 
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+
+<img src="/static/img/about-tt_2019.jpg" alt="Tameyia Toney"
+	title="Tameyia Toney" class="rt" />
 
 Add a few line breaks in here to test:-
 Capitalize  
