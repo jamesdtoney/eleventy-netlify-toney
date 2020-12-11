@@ -2,6 +2,8 @@
 	--primary: #2b2b2b;
 	--secondary: white;
 	--background: #f7f7f7;
+	--textColor: #333;
+	--linkColor: #a95200
 }
 
 *, *:before, *:after {
@@ -20,6 +22,9 @@ body {
 	height: 100vh;
 	grid-template-rows: auto 1fr auto;
 	background-color: var(--background);
+	color: var(--textColor);
+	line-height: 1.6em;
+	font-size: 1.2em;
 }
 
 main, header, footer {
@@ -45,6 +50,11 @@ header {
 	text-align: center;
 }
 
+header a {
+	background-image: none !important;
+	color: var(--primary) !important;
+}
+
 p,
 pre,
 code {
@@ -53,14 +63,19 @@ code {
 
 a[href],
 a[href]:visited {
-	color: var(--primary);
 	text-decoration: none;
-	border-bottom: 5px solid var(--primary);
+	color: var(--linkColor);
+	background-image: linear-gradient(0deg,#a95a002e 50%,#a952002e 50%);
+	background-repeat: repeat-x;	
+	background-position: 0 25%;
+	padding-bottom: 5px;
+	transition: background-position .2s cubic-bezier(.33,.66,.66,1);
+	background-size: 100% 200%;
 }
 
 a[href]:not(:hover) {
 	text-decoration: none;
-	border-bottom: none;
+	background-position: 0 1.18em;
 }
 
 img {
@@ -107,13 +122,13 @@ header > em {
 	margin: .67em 0;
 	font-weight: bold;
 	font-style: normal;
-	background: white;
+	/* background: white; */
 	padding: .5em .5em .5em;
 	text-transform: uppercase;
 }
 
-/* Header Nav */
-header nav ul {
+/* Nav */
+nav ul {
 	padding: 0;
 	list-style: none;
 	background: #2b2b2b;
@@ -121,29 +136,31 @@ header nav ul {
 	margin: 0;
 }
 
-header nav ul :first-child {
+nav ul :first-child {
 	margin-left: 0;
 }
 
-header nav li {
+nav li {
 	display: inline-block;
 	margin: 0 .25em;
 }
 
-header nav li a {
+nav li a {
 	padding: .25em .5em;
 	color: white !important;
+	background-image: none !important;
 }
 
-header nav li a[href]:hover {
-	border-bottom: 5px solid white;
+nav li a[href]:hover {
+	background-color: white;
+	color: #2b2b2b !important;
 }
 
-header nav li a[href]:not(:hover) {
+nav li a[href]:not(:hover) {
 	text-decoration: none;
 }
 
-header nav li a[data-current="current item"] {
+nav li a[data-current="current item"] {
 	background-color: white;
 	color: #2b2b2b !important;
 }
@@ -178,6 +195,7 @@ a[rel="tag"]:visited {
   border-radius: .25em;
   text-decoration: none;
 	margin: 0 .5em .5em 0;
+	background-image: none !important;
 }
 
 a[rel="tag"]:hover {
