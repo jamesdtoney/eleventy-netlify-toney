@@ -3,7 +3,7 @@
 	--secondary: white;
 	--background: #f7f7f7;
 	--textColor: #333;
-	--linkColor: #a95200
+	--linkColor: #a95200;
 }
 
 *, *:before, *:after {
@@ -25,6 +25,22 @@ body {
 	color: var(--textColor);
 	line-height: 1.6em;
 	font-size: 1.2em;
+}
+
+/* top shadow */
+body::before {
+  content: "";
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
 }
 
 main, header, footer {
@@ -238,6 +254,15 @@ button {
 	background-color: var(--primary);
 	color: var(--secondary);
 	cursor: pointer;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.15);
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+button:hover {
+	box-shadow: none;
 }
 
 @media screen and (min-width:768px) {
@@ -278,4 +303,25 @@ table {
 table td {
 	background: #ffffff33;
     padding: .4em;
+}
+
+blockquote {
+  background: var(--background);
+  border-left: 10px solid (var(--textColor));
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: var(--textColor);
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
 }
