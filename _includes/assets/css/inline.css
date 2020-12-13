@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Work+Sans&display=swap');
+
 :root {
-	--primary: #2b2b2b;
+	--primary: black;
 	--secondary: white;
 	--background: #f7f7f7;
-	--textColor: #333;
-	--linkColor: #a95200;
+	--textColor: black;
+	--linkColor: #005da9;
 }
 
 *, *:before, *:after {
@@ -14,7 +16,7 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-family: "EB Garamond", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -40,6 +42,7 @@ body::before {
 }
 
 h1, h2, h3, h4, h5, h6 {
+	font-family: "Work Sans";
 	text-transform: uppercase;
 }
 
@@ -64,6 +67,7 @@ main {
 
 header {
 	text-align: center;
+	font-family: "Work Sans";
 }
 
 header a {
@@ -81,7 +85,7 @@ a[href],
 a[href]:visited {
 	text-decoration: none;
 	color: var(--linkColor);
-	background-image: linear-gradient(0deg,#a95a002e 50%,#a952002e 50%);
+	background-image: linear-gradient(0deg,#005da92e 50%,#0057a92e 50%);
 	background-repeat: repeat-x;	
 	background-position: 0 25%;
 	padding-bottom: 5px;
@@ -147,9 +151,12 @@ header > em {
 nav ul {
 	padding: 0;
 	list-style: none;
-	background: #2b2b2b;
+	background: var(--textColor);
 	padding: 15px;
 	margin: 0;
+	font-family: "Work Sans";
+	font-size: smaller;
+	text-transform: uppercase;
 }
 
 nav ul :first-child {
@@ -169,7 +176,7 @@ nav li a {
 
 nav li a[href]:hover {
 	background-color: white;
-	color: #2b2b2b !important;
+	color: var(--textColor) !important;
 }
 
 nav li a[href]:not(:hover) {
@@ -178,7 +185,7 @@ nav li a[href]:not(:hover) {
 
 nav li a[data-current="current item"] {
 	background-color: white;
-	color: #2b2b2b !important;
+	color: var(--textColor) !important;
 }
 
 /* Posts List */
@@ -250,8 +257,8 @@ textarea {
 }
 
 button {
-	border: 1px solid var(--primary);
-	background-color: var(--primary);
+	border: 1px solid var(--textColor);
+	background-color: var(--textColor);
 	color: var(--secondary);
 	cursor: pointer;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.15);
@@ -290,7 +297,7 @@ h1 {
     padding: .2em 1em;
     position: relative;
     top: -50px;
-    border-bottom: 10px solid #2b2b2b;
+    border-bottom: 10px solid var(--textColor);
     margin-bottom: -50px;
 }
 .no-hero h1 {
@@ -311,6 +318,7 @@ blockquote {
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
+  font-style: italic;
 }
 
 blockquote:before {
