@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Quicksand&display=swap');
 
 :root {
 	--primary: black;
@@ -42,7 +42,7 @@ body::before {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Work Sans";
+	font-family: "Quicksand";
 	text-transform: uppercase;
 }
 
@@ -67,7 +67,7 @@ main {
 
 header {
 	text-align: center;
-	font-family: "Work Sans";
+	font-family: "Quicksand";
 }
 
 header a {
@@ -154,7 +154,7 @@ nav ul {
 	background: var(--textColor);
 	padding: 15px;
 	margin: 0;
-	font-family: "Work Sans";
+	font-family: "Quicksand";
 	font-size: smaller;
 	text-transform: uppercase;
 }
