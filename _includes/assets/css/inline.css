@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap');
 
 :root {
 	--primary: black;
@@ -16,7 +16,7 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: "EB Garamond", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -26,7 +26,8 @@ body {
 	background-color: var(--background);
 	color: var(--textColor);
 	line-height: 1.6em;
-	font-size: 1.2em;
+	/* font-size: 1.2em; */
+	font-weight: 300;
 }
 
 /* top shadow */
@@ -37,13 +38,13 @@ body::before {
   left: 0;
   width: 100%;
   height: 10px;
-  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.5);
   z-index: 100;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Quicksand";
 	text-transform: uppercase;
+	font-weight: 900;
 }
 
 main, header, footer {
@@ -67,7 +68,7 @@ main {
 
 header {
 	text-align: center;
-	font-family: "Quicksand";
+	font-weight: 900;
 }
 
 header a {
@@ -154,9 +155,10 @@ nav ul {
 	background: var(--textColor);
 	padding: 15px;
 	margin: 0;
-	font-family: "Quicksand";
-	font-size: smaller;
+	font-family: "Open Sans";
+	/* font-size: smaller; */
 	text-transform: uppercase;
+	font-weight: 900;
 }
 
 nav ul :first-child {
@@ -248,7 +250,8 @@ button {
   padding: 1em;
   margin-bottom: 1em;
 	font-size: 1rem;
-	font-family: "Avenir", "Avenir Next", sans-serif;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 900;
 }
 
 input,
@@ -257,11 +260,11 @@ textarea {
 }
 
 button {
-	border: 1px solid var(--textColor);
-	background-color: var(--textColor);
+	border: 1px solid var(--linkColor);
+	background-color: var(--linkColor);
 	color: var(--secondary);
 	cursor: pointer;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.15);
+	box-shadow: 0 8px 16px 0 rgba(17, 76, 143, 0.2), 0 6px 20px 0 rgba(17, 76, 143,0.15);
 	-webkit-transition-duration: 0.4s; /* Safari */
 	transition-duration: 0.4s;
 	display: inline-block;
@@ -286,7 +289,7 @@ img.rt {
 
 .page-hero {
 	height: 20rem;
-  	background-position: center;
+  	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -314,15 +317,17 @@ table td {
 
 blockquote {
   background: var(--background);
-  border-left: 10px solid (var(--textColor));
+  border-left: 10px solid (var(--linkColor));
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
   font-style: italic;
+  color:rgba(0, 0, 0, 0.5);
+  font-size: larger;
 }
 
 blockquote:before {
-  color: var(--textColor);
+  color: var(--linkColor);
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
